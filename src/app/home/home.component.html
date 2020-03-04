@@ -1,0 +1,8 @@
+
+<div style="text-align:center;">
+    <input style="height: 35px; margin-right: 2%;" [(ngModel)]="txtSearch" placeholder="Employee Name"/>
+    <app-search-button (nameSearch)="SearchName()"></app-search-button>
+    <br><br>
+
+    <app-employees></app-employees>
+</div>

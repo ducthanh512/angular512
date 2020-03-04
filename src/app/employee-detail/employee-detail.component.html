@@ -1,0 +1,24 @@
+
+<div  class="form-style-9" *ngIf="employee">
+    <h2>{{employee.employee_name | uppercase}} Details</h2>
+    <div hidden="true"><span>id: </span>{{employee.id}}</div>
+    <div>
+      <label>Name:</label><br>
+        <input style="height: 35px; width: 60%; margin-bottom: 20px;"  value="{{employee.employee_name}}" placeholder="Name"/>
+      
+      <br>
+      <label>Salary: </label><br>
+        <input style="height: 35px; width: 60%; margin-bottom: 20px;"  class="textbox"  value="{{employee.employee_salary}}" placeholder="Salary"/>
+     
+      <br>
+      <label>Age:</label><br>
+        <input style="height: 35px; width: 60%; margin-bottom: 20px;"  class="textbox" value="{{employee.employee_age}}" placeholder="Age"/>
+      
+      <br>
+ 
+      <br><br>
+    </div>
+    <button type="submit" (click)="goBack()">go back</button>
+    
+  </div>
+   

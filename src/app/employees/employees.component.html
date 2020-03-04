@@ -1,0 +1,16 @@
+<table  class="form-style-9"  style="width:100%">
+        <tr >
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Salary</th>
+            <th scope="col">Age</th>
+        </tr>
+    <ng-container *ngFor = "let employee of employees">
+            <tr routerLink="/detail/{{employee.id}}">
+                <td scope="col">{{employee.id}}</td>
+                <td scope="col">{{employee.employee_name}}</td>
+                <td scope="col">{{employee.employee_salary}}</td>
+                <td scope="col">{{employee.employee_age}}</td> 
+            </tr>    
+    </ng-container>
+</table>
